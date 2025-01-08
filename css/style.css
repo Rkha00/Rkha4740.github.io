@@ -1,0 +1,278 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+    
+/* Navigation */
+.cs-navbar {
+    background-color: #004d40;
+    padding: 1rem 0;
+}
+    
+.cs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+    
+.cs-logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+    
+.cs-nav {
+    display: flex;
+    gap: 1rem;
+}
+    
+.cs-nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+    
+/* Hero Section */
+.cs-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background-color: #f8f8f8;
+}
+    
+.cs-hero-content {
+    max-width: 50%;
+}
+    
+.cs-hero h1 {
+    font-size: 2.5rem;
+    color: #004d40;
+}
+    
+.cs-hero p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: #333333;
+}
+    
+.cs-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    background-color: #004d40;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+    
+.cs-button-secondary {
+    background-color: #004d40;
+}
+    
+.cs-hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    opacity: 0.25;
+}
+    
+/* Services Section */
+.cs-services {
+    padding: 1rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+    
+.cs-services h2 {
+    font-size: 2rem;
+    color: #004d40;
+    margin-bottom: 1.5rem;
+    
+}
+    
+.cs-service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+    
+.cs-card {
+    background-color: #f1f1f1;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    width: 30%;
+}
+    
+.cs-card h3 {
+    font-size: 1.5rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+}
+    
+.cs-card p {
+    font-size: 1rem;
+    color: #040303;
+}
+
+/* FAQ Section */
+    #sbsr-1575 .cs-container { 
+      padding: 2rem 1rem;
+      background-color: #f9f9f9;
+      
+    }
+    #sbsr-1575 .cs-content {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+    
+      overflow: hidden;
+    }
+    #sbsr-1575 .cs-title {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #004d40;
+    }
+    #sbsr-1575 .cs-faq-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    #sbsr-1575 .cs-faq-item {
+      background-color: #f7f7f7;
+      padding: 1rem;
+      box-sizing: border-box;
+      transition: border-bottom 0.3s;
+      align-items: center;
+    }
+
+    #sbsr-1575 .cs-faq-item.active {
+      border-color: var(--primaryLight);
+    }
+    #sbsr-1575 .cs-faq-item.active .cs-button {
+      color: var(--primary);
+    }
+    #sbsr-1575 .cs-faq-item.active .cs-button .cs-indicator:before {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+    #sbsr-1575 .cs-faq-item.active .cs-button .cs-indicator:after {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    #sbsr-1575 .cs-faq-item.active .cs-item-p {
+      height: auto;
+      padding-top: 1rem;
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    #sbsr-1575 .cs-button {
+      /* 16px - 20px */
+      font-size: 1rem;
+      line-height: 1.2em;
+      font-weight: bold;
+      padding: 0;
+      border: none;
+      background: transparent;
+      color: var(--headerColor);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      transition: background-color 0.3s, color 0.3s;
+      color: #004d40;
+    }
+    #sbsr-1575 .cs-button:hover {
+      cursor: pointer;
+      background-color: #e0e0e0;
+    }
+    #sbsr-1575 .cs-button .cs-indicator {
+      width: 1.5rem;
+      height: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    #sbsr-1575 .cs-button .cs-indicator:before {
+      /* left line */
+      content: '';
+      width: 1rem;
+      height: 0.125rem;
+      background-color: #767676;
+      opacity: 1;
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform .5s;
+    }
+    #sbsr-1575 .cs-button .cs-indicator:after {
+      /* right line */
+      content: '';
+      width: 1rem;
+      height: 0.125rem;
+      background-color: #767676;
+      opacity: 1;
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      transition: transform .5s;
+    }
+    #sbsr-1575 .cs-button-text {
+     /* width: 90%;
+      display: block;*/
+      padding: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    }
+    #sbsr-1575 .cs-item-p {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      width: 90%;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      color: var(--bodyTextColor);
+      /* clips the text so it doesn't show up */
+      overflow: hidden;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: opacity 0.3s, transform 0.3s, padding-bottom 0.3s;   
+    }                       
+    
+/* Footer Section */
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+    
+footer nav a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+
